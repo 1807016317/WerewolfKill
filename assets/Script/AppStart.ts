@@ -1,7 +1,13 @@
-// 游戏进入脚本
+/*
+*	title: AppStart
+*	desc: 应用开始
+*	auth: wangquanyou
+*	date: 2020/06/17 
+*/
 
 require('./serverConnect/serverConnect');
-
+require('./manager/AppMgr');
+    
 const {ccclass, property} = cc._decorator;
 
 @ccclass
