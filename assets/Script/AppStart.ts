@@ -5,8 +5,7 @@
 *	date: 2020/06/17 
 */
 
-//import AppMgr from './manager/AppMgr';
-import AppMgr = require("./manager/AppMgr");
+import AppMgr from './manager/AppMgr';
     
 const {ccclass, property} = cc._decorator;
 
@@ -22,8 +21,7 @@ export default class AppStart extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        AppMgr.AppMgr.getInstance().initMgr();
-        console.log("args" + AppMgr.g_Mgr["a"]);
+        AppMgr.getInstance();
     }
 
     start () {

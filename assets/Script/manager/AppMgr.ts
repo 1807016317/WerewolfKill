@@ -4,19 +4,23 @@
 *	auth: wangquanyou
 *	date: 2020/06/17 
 */
-let g_Mgr = {};
 let appMgr_Instance = null;
 
 import Http = require("../serverConnect/Http");
+import g_Mgr from "./Global";
+import HttpReqMgr from "../serverConnect/HttpReqMgr";
+import UserMgr from "./UserMgr";
 
-class AppMgr {
+
+export default class AppMgr {
     private constructor(){
-        this._initMgr();
+        this.initMgr();
     }
 
     static getInstance(){
         if(appMgr_Instance == null || appMgr_Instance == undefined){
-            return appMgr_Instance = new AppMgr();
+            appMgr_Instance = new AppMgr();
+            return appMgr_Instance;
         }
         return appMgr_Instance;
     }
@@ -49,18 +53,19 @@ class AppMgr {
     /**
      * 手动初始化生命周期
      */
-    private _initMgr() {
+    private initMgr() {
+        //g_Mgr 中的 key 值一律使用驼峰式
         cc["appMgr"] = {};
         g_Mgr["appMgr"] = {};
         console.log("app" + cc["appMgr"]);
 
-        //let UserMgr = require("UserMgr");
-        //g_Mgr["userMgr"] = new UserMgr();
+        g_Mgr["userMgr"] = new UserMgr();
 
         //let ReplayMgr = require("ReplayMgr");
         //g_Mgr["replayMgr"] = new ReplayMgr();
 
         g_Mgr["http"] = Http;
+        g_Mgr["httpReqMgr"] = HttpReqMgr;
         //g_Mgr["global"] = require("Global");
         //g_Mgr["net"] = require("Net");
 
@@ -78,5 +83,3 @@ class AppMgr {
         g_Mgr["args"] = this.urlParse();
     };
 }
-
-export {AppMgr ,g_Mgr};
