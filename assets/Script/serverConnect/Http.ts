@@ -1,41 +1,58 @@
+/**
+*   title: Http
+*	desc: Http 请求
+*	auth: wangquanyou
+*	date: 2020/06/17 
+*/
 
 let serverUrl = "http://127.0.0.1:9000";
 
-exports.master_url = null;
-exports.url = null;
-exports.token = null;
+let master_url = null;
+let url = null;
+let token = null;
 
 init();
 
 function init() {
-    exports.master_url = serverUrl;
-    exports.url = serverUrl;
-}
+    master_url = serverUrl;
+    url = serverUrl;
+};
 
-function setURL(url) {
+/**
+* 
+* @param url 
+*/
+export function setURL(url) {
     serverUrl = url;
     init();
 };
 
-function sendRequest(path, data, handler, extraUrl) {
-    var xhr = cc.loader.getXMLHttpRequest();
+/**
+* 
+* @param path 
+* @param data 
+* @param handler 
+* @param extraUrl 
+*/
+export function sendRequest(path, data, handler, extraUrl) {
+    let xhr = cc.loader.getXMLHttpRequest();
     xhr.timeout = 5000;
 
     if (data == null) {
         data = {};
     }
-    if (exports.token) {
-        data.token = exports.token;
+    if (token) {
+        data.token = token;
     }
 
     if (extraUrl == null) {
-        extraUrl = exports.url;
+        extraUrl = url;
     }
 
     //解析请求路由以及格式化请求参数
-    var sendpath = path;
-    var sendtext = '?';
-    for (var k in data) {
+    let sendpath = path;
+    let sendtext = '?';
+    for (let k in data) {
         if (sendtext != "?") {
             sendtext += "&";
         }
@@ -43,7 +60,7 @@ function sendRequest(path, data, handler, extraUrl) {
     }
 
     //组装完整的URL
-    var requestURL = extraUrl + sendpath + encodeURI(sendtext);
+    let requestURL = extraUrl + sendpath + encodeURI(sendtext);
 
     //发送请求
     console.log("RequestURL:" + requestURL);
@@ -53,26 +70,28 @@ function sendRequest(path, data, handler, extraUrl) {
         xhr.setRequestHeader("Accept-Encoding", "gzip,deflate");
     }
 
-    var timer = setTimeout(function() {
+
+    function retryFunc() {
+        sendRequest(path, data, handler, extraUrl);
+    };
+
+    let timer = setTimeout(function () {
         xhr["hasRetried"] = true;
         xhr.abort();
         console.log('http timeout');
         retryFunc();
     }, 5000);
 
-    var retryFunc = function() {
-        sendRequest(path, data, handler, extraUrl);
-    };
-
     xhr.onreadystatechange = function () {
         console.log("onreadystatechange");
         clearTimeout(timer);
+        let ret = null;
         if (xhr.readyState === 4 && (xhr.status >= 200 && xhr.status < 300)) {
             // console.log("http res(" + xhr.responseText.length + "):" + xhr.responseText);
             cc.log("request from [" + xhr.responseURL + "] data [", ret, "]");
-            var respText = xhr.responseText;
+            let respText = xhr.responseText;
 
-            var ret = null;
+
             try {
                 ret = JSON.parse(respText);
             } catch (e) {
@@ -90,12 +109,12 @@ function sendRequest(path, data, handler, extraUrl) {
             handler = null;
         }
         else if (xhr.readyState === 4) {
-            if(xhr["hasRetried"]){
+            if (xhr["hasRetried"]) {
                 return;
             }
 
             console.log('other readystate == 4' + ', status:' + xhr.status);
-            setTimeout(function() {
+            setTimeout(function () {
                 retryFunc();
             }, 5000);
         }
@@ -113,7 +132,5 @@ function sendRequest(path, data, handler, extraUrl) {
     }
 
     return xhr;
-}
+};
 
-exports.sendRequest = sendRequest;
-exports.setURL = setURL;

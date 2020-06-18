@@ -31,7 +31,9 @@ export default class Login extends cc.Component {
 
   }
 
-  /*
+  /**
+   * 登录
+   */
   onLogin() {
     let self = this;
     Tools.log(methodID.login, "获取微信登录态");
@@ -49,7 +51,7 @@ export default class Login extends cc.Component {
               data: {
                 code: res.code
               }
-            })*
+            })*/
         } else {
           Tools.log(methodID.login, "登录失败！" + res.errMsg);
         }
@@ -57,9 +59,11 @@ export default class Login extends cc.Component {
     })
   }
   
-
-  // 向玩家申请授权
-  // 可以通过 wx.getSetting 先查询一下用户是否授权了 "scope.record" 这个 scope
+  /**
+   * 向玩家申请授权
+   * 可以通过 wx.getSetting 先查询一下用户是否授权了 "scope.record" 这个 scope
+   */
+  /**
   getAuthorize() {
     let self = this;
     wx.getSetting({
