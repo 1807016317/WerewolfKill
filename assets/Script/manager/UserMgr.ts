@@ -40,8 +40,12 @@ export default class UserMgr {
           //授权获取玩家信息
           self.getAuthorize();
           //发起微信小游戏登录凭证校验请求
-          g_Mgr["httpReqMgr"].reqWxMiniLogin(res.code, function (date) {
-            console.log("微信获取票据接口请求到后台，返回 date：" + date);
+          g_Mgr["httpReqMgr"].reqWxMiniLogin(res.code, function (data) {
+            console.log("微信获取票据接口请求到后台，返回 date：" + data);
+            let loginNode = cc.find("Canvas/LOGIN");
+            let hallNode = cc.find("Canvas/GAMEHALL");
+            loginNode.active = false;
+            hallNode.active = true;
           });
         } else {
           Tools.log(methodID.login, "登录失败！" + res.errMsg);

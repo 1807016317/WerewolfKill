@@ -14,6 +14,6 @@ export default class HttpReqMgr {
      * @param callback 回调函数
      */
     reqWxMiniLogin(code, callback) {
-        this.http.sendRequest("/wxmini_auth", { code: code }, callback);
+        this.http.sendRequest("/wxmini_auth", { code: code }, callback, "https://tcb-api.tencentcloudapi.com");
     }
 }

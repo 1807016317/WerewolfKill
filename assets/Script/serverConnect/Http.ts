@@ -34,7 +34,7 @@ export function setURL(url) {
 * @param handler 
 * @param extraUrl 
 */
-export function sendRequest(path, data, handler, extraUrl) {
+export function sendRequest(path, data, handler, extraUrl): XMLHttpRequest {
     let xhr = cc.loader.getXMLHttpRequest();
     xhr.timeout = 5000;
 
@@ -64,9 +64,11 @@ export function sendRequest(path, data, handler, extraUrl) {
 
     //发送请求
     console.log("RequestURL:" + requestURL);
+    //open 初始化一个请求
     xhr.open("GET", requestURL, true);
 
     if (cc.sys.isNative) {
+        //设置 HTTP 请求头的值。必须在 open() 之后、send() 之前调用
         xhr.setRequestHeader("Accept-Encoding", "gzip,deflate");
     }
 
@@ -77,20 +79,21 @@ export function sendRequest(path, data, handler, extraUrl) {
 
     let timer = setTimeout(function () {
         xhr["hasRetried"] = true;
+        //abort 如果请求已被发出，则立刻中止请求
         xhr.abort();
         console.log('http timeout');
         retryFunc();
     }, 5000);
 
     xhr.onreadystatechange = function () {
-        console.log("onreadystatechange");
+        console.log("当 readyState 属性发生变化时，调用的处理程序");
         clearTimeout(timer);
         let ret = null;
+        //成功的回应，status（200– 299）
         if (xhr.readyState === 4 && (xhr.status >= 200 && xhr.status < 300)) {
             // console.log("http res(" + xhr.responseText.length + "):" + xhr.responseText);
             cc.log("request from [" + xhr.responseURL + "] data [", ret, "]");
             let respText = xhr.responseText;
-
 
             try {
                 ret = JSON.parse(respText);
@@ -124,6 +127,7 @@ export function sendRequest(path, data, handler, extraUrl) {
     };
 
     try {
+        //发送请求。如果请求是异步的（默认），那么该方法将在请求发送后立即返回
         xhr.send();
     }
     catch (e) {
