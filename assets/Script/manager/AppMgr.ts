@@ -6,8 +6,8 @@
 */
 let appMgr_Instance = null;
 
+import g_Mgr = require("./Global");
 import Http = require("../serverConnect/Http");
-import g_Mgr from "./Global";
 import HttpReqMgr from "../serverConnect/HttpReqMgr";
 import UserMgr from "./UserMgr";
 
@@ -65,7 +65,7 @@ export default class AppMgr {
         //g_Mgr["replayMgr"] = new ReplayMgr();
 
         g_Mgr["http"] = Http;
-        g_Mgr["httpReqMgr"] = HttpReqMgr;
+        g_Mgr["httpReqMgr"] = new HttpReqMgr();
         //g_Mgr["global"] = require("Global");
         //g_Mgr["net"] = require("Net");
 

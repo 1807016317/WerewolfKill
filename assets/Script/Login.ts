@@ -5,7 +5,7 @@
 */
 import Tools from "./tools/Tools"
 import methodID from "./tools/methodID"
-import g_Mgr from "./manager/Global";
+import g_Mgr = require("./manager/Global");
 
 const { ccclass, property } = cc._decorator;
 
@@ -37,7 +37,7 @@ export default class Login extends cc.Component {
    */
   onLogin() {
     Tools.log(methodID.login, "获取微信登录态");
-    g_Mgr["userMgr"].WxLogin();
+    g_Mgr["userMgr"].wxLogin();
   }
   // update (dt) {}
 }

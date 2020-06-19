@@ -4,17 +4,16 @@
 *	auth: wangquanyou
 *	date: 2020/06/18 
 */
-import g_Mgr from "../manager/Global";
-let http = g_Mgr["http"];
+import g_Mgr = require("../manager/Global");
 
 export default class HttpReqMgr {
+    http = g_Mgr["http"];
     /**
      * 微信小游戏登录凭证校验
      * @param code 调用微信小游戏客户端登录获取到的 code
      * @param callback 回调函数
      */
-    static reqWxMiniLogin(code, callback) {
-        console.log(g_Mgr["http"] == null || g_Mgr["http"] == undefined);
-        http.sendRequest("/wxmini_auth", { code: code }, callback);
+    reqWxMiniLogin(code, callback) {
+        this.http.sendRequest("/wxmini_auth", { code: code }, callback);
     }
 }
