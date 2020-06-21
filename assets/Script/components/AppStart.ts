@@ -5,7 +5,7 @@
 *	date: 2020/06/17 
 */
 
-import AppMgr from './manager/AppMgr';
+import AppMgr from '../manager/AppMgr';
     
 const {ccclass, property} = cc._decorator;
 

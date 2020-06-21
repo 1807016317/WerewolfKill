@@ -5,7 +5,7 @@
 *	date: 2020/06/17 
 */
 
-let serverUrl = "http://127.0.0.1:9000";
+let serverUrl = "http://www.oldwang.top";
 
 let master_url = null;
 let url = null;

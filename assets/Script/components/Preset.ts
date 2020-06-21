@@ -18,5 +18,9 @@ export default class preset extends cc.Component {
 
     }
 
+    close(){
+        this.node.active = false;
+    }
+
     // update (dt) {}
 }

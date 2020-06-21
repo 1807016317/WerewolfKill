@@ -4,7 +4,7 @@
 * date：2020/6/9
 */
 
-import g_Mgr = require("./manager/Global");
+import g_Mgr = require("../manager/Global");
 
 const {ccclass, property} = cc._decorator;
 
@@ -23,9 +23,9 @@ export default class GameHall extends cc.Component {
     @property(cc.Sprite)
     userPic: cc.Sprite = null;
     
-    profileName = g_Mgr["userMgr"].properties.userName; //用户昵称
-    avatarUrl = g_Mgr["userMgr"].properties.avatarUrl; //用户头像
-    sex = g_Mgr["userMgr"].properties.sex; //性别
+    //profileName = g_Mgr["userMgr"].properties.userName; //用户昵称
+    //avatarUrl = g_Mgr["userMgr"].properties.avatarUrl; //用户头像
+    //sex = g_Mgr["userMgr"].properties.sex; //性别
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -35,8 +35,8 @@ export default class GameHall extends cc.Component {
     }
 
     start () {
-        this.userName.string = this.profileName;
-        this.userPic.spriteFrame = this.avatarUrl;
+        //this.userName.string = this.profileName;
+        //this.userPic.spriteFrame = this.avatarUrl;
     }
 
     //预设板
