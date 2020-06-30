@@ -84,13 +84,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 238
+        "__id__": 264
       },
       {
-        "__id__": 239
+        "__id__": 265
       },
       {
-        "__id__": 240
+        "__id__": 266
       }
     ],
     "_prefab": null,
@@ -9602,10 +9602,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 236
+        "__id__": 262
       },
       {
-        "__id__": 237
+        "__id__": 263
       }
     ],
     "_prefab": null,
@@ -9798,10 +9798,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 234
+        "__id__": 260
       },
       {
-        "__id__": 235
+        "__id__": 261
       },
       {
         "__id__": 203
@@ -9873,10 +9873,10 @@
         "__id__": 202
       },
       {
-        "__id__": 232
+        "__id__": 258
       },
       {
-        "__id__": 233
+        "__id__": 259
       }
     ],
     "_prefab": null,
@@ -10079,46 +10079,49 @@
     },
     "_children": [
       {
-        "__id__": 207
+        "__id__": 208
       },
       {
-        "__id__": 209
+        "__id__": 212
       },
       {
-        "__id__": 211
+        "__id__": 216
       },
       {
-        "__id__": 213
+        "__id__": 220
       },
       {
-        "__id__": 215
+        "__id__": 224
       },
       {
-        "__id__": 217
+        "__id__": 228
       },
       {
-        "__id__": 219
+        "__id__": 232
       },
       {
-        "__id__": 221
+        "__id__": 236
       },
       {
-        "__id__": 223
+        "__id__": 240
       },
       {
-        "__id__": 225
+        "__id__": 244
       },
       {
-        "__id__": 227
+        "__id__": 248
       },
       {
-        "__id__": 229
+        "__id__": 252
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 231
+        "__id__": 256
+      },
+      {
+        "__id__": 257
       }
     ],
     "_prefab": null,
@@ -10132,7 +10135,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 220,
+      "width": 1080,
       "height": 2730
     },
     "_anchorPoint": {
@@ -10145,7 +10148,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        0,
+        -428.75,
         0,
         0,
         0,
@@ -10185,6 +10188,9 @@
     "_components": [
       {
         "__id__": 206
+      },
+      {
+        "__id__": 207
       }
     ],
     "_prefab": null,
@@ -10198,8 +10204,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240,
-      "height": 250
+      "width": 1080,
+      "height": 1620
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -10249,11 +10255,38 @@
       }
     ],
     "_spriteFrame": null,
-    "_type": 2,
+    "_type": 0,
     "_segments": 64,
     "_N$alphaThreshold": 0,
     "_N$inverted": false,
     "_id": "33KBNXoWlN1q3Qpj+8klnf"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 205
+    },
+    "_enabled": true,
+    "alignMode": 0,
+    "_target": null,
+    "_alignFlags": 45,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 200,
+    "_originalHeight": 150,
+    "_id": "72fxiZ2JpPF5Bm3ITIuh3O"
   },
   {
     "__type__": "cc.Node",
@@ -10262,11 +10295,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 209
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 208
+        "__id__": 211
       }
     ],
     "_prefab": null,
@@ -10318,11 +10355,105 @@
     "_id": "36PH+y7FBBG68sydBvvnm5"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 208
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 210
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 90.39999999999999
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "98yziaA69OUbASEbPY++wP"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 209
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "每晚可睁眼查看一个玩家的角色身份",
+    "_N$string": "每晚可睁眼查看一个玩家的角色身份",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "b2+XrpZj9K/5/6+hHMXjJz"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 208
     },
     "_enabled": true,
     "_materials": [
@@ -10356,11 +10487,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 213
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 210
+        "__id__": 215
       }
     ],
     "_prefab": null,
@@ -10412,11 +10547,105 @@
     "_id": "48msuEUQtJ8qPPoWjTwjCN"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 212
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 214
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 170.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "5222lqQMNIvasK5NeWxF43"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 213
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "拥有一瓶救人灵药和一瓶杀人毒药，两瓶药不可在同一晚使用，被毒死的玩家没有遗言",
+    "_N$string": "拥有一瓶救人灵药和一瓶杀人毒药，两瓶药不可在同一晚使用，被毒死的玩家没有遗言",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "84VcHV+XtPc4iXGQPeNKr7"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 209
+      "__id__": 212
     },
     "_enabled": true,
     "_materials": [
@@ -10450,11 +10679,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 217
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 212
+        "__id__": 219
       }
     ],
     "_prefab": null,
@@ -10506,11 +10739,105 @@
     "_id": "1cS/H4vxZLeoWVshsteTS3"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 218
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 130.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "70ibdqadhGpKMROdegk7dO"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "被杀/被票出局后可以开抢带走场上任一玩家，被毒杀不可开枪",
+    "_N$string": "被杀/被票出局后可以开抢带走场上任一玩家，被毒杀不可开枪",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "d3DNyiJHZEspsVvw7UXZAr"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 211
+      "__id__": 216
     },
     "_enabled": true,
     "_materials": [
@@ -10544,11 +10871,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 221
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 214
+        "__id__": 223
       }
     ],
     "_prefab": null,
@@ -10600,11 +10931,105 @@
     "_id": "advPg0X/dLi7woidWpMX7A"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 220
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 222
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 130.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "e5UcHwiu1OrLFLnpDGBok7"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 221
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "首次被投票后豁免出局，可以继续发言，但失去投票权",
+    "_N$string": "首次被投票后豁免出局，可以继续发言，但失去投票权",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "b8sMQ4AmlEL5yRVPPQ1yJD"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 213
+      "__id__": 220
     },
     "_enabled": true,
     "_materials": [
@@ -10638,11 +11063,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 225
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 216
+        "__id__": 227
       }
     ],
     "_prefab": null,
@@ -10694,11 +11123,105 @@
     "_id": "a2hmHClFZP8rg9fNgRM8SN"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 224
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 226
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 90.39999999999999
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "47JByvmddOcYjLyw1MmcOZ"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 225
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "白天通过投票决定出局玩家",
+    "_N$string": "白天通过投票决定出局玩家",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "95D/txUK1GTb/wa+/+eEbz"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 215
+      "__id__": 224
     },
     "_enabled": true,
     "_materials": [
@@ -10732,11 +11255,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 229
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 218
+        "__id__": 231
       }
     ],
     "_prefab": null,
@@ -10788,11 +11315,105 @@
     "_id": "23y4x2tw9NloLF7OSzuujO"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 228
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 230
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 90.39999999999999
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "d45nwTLs1MEoeBDzue4zNC"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 229
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "进行总结发言归票，并拥有1.5票权",
+    "_N$string": "进行总结发言归票，并拥有1.5票权",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "a6DmrFsb1J7bRdWKXzfcVE"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 217
+      "__id__": 228
     },
     "_enabled": true,
     "_materials": [
@@ -10826,11 +11447,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 233
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 220
+        "__id__": 235
       }
     ],
     "_prefab": null,
@@ -10882,11 +11507,105 @@
     "_id": "3398Sk3m5HpYNLxBtgvt0C"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 232
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 234
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 170.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "69f9SXVOVOcLkdFYQ40Tpi"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 233
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "每晚可以守护一个玩家，被守护玩家拥有狼杀豁免，可以自我守护，不可连续两晚守护同一个玩家",
+    "_N$string": "每晚可以守护一个玩家，被守护玩家拥有狼杀豁免，可以自我守护，不可连续两晚守护同一个玩家",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "b9jtGuRVFNXZsfM0SQ9bx/"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 219
+      "__id__": 232
     },
     "_enabled": true,
     "_materials": [
@@ -10920,11 +11639,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 237
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 222
+        "__id__": 239
       }
     ],
     "_prefab": null,
@@ -10976,11 +11699,105 @@
     "_id": "3di7ZJk9tJ8amRYr01FIlz"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 236
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 238
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 90.39999999999999
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "08Z4q+I0xGxKFcO3xAb8gi"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 237
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "每晚可睁眼选择杀死场上任一玩家",
+    "_N$string": "每晚可睁眼选择杀死场上任一玩家",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "603eeWASRDM7R4U94+pwfT"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 221
+      "__id__": 236
     },
     "_enabled": true,
     "_materials": [
@@ -11014,11 +11831,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 241
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 224
+        "__id__": 243
       }
     ],
     "_prefab": null,
@@ -11070,11 +11891,105 @@
     "_id": "7eF9jKvT1Jh4ddqgZZ5TO0"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 240
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 242
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 170.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "fbF57vl3FF57T/h9XqiZ4U"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 241
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "每晚可睁眼选择杀死场上任一玩家，白天可以选择自爆带走一个玩家并立即进入夜晚",
+    "_N$string": "每晚可睁眼选择杀死场上任一玩家，白天可以选择自爆带走一个玩家并立即进入夜晚",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "2btkFL7fVM7Yu8yU6Mct3x"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 223
+      "__id__": 240
     },
     "_enabled": true,
     "_materials": [
@@ -11108,11 +12023,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 245
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 226
+        "__id__": 247
       }
     ],
     "_prefab": null,
@@ -11164,11 +12083,105 @@
     "_id": "a7rJV5X/JEXbezeKQSwWK0"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 244
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 246
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 210.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "d71mTKj6FK1YnWo8sI0bjD"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 245
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "狼人阵营但不能杀人，晚上也不和狼人一起睁眼，狼队友死光后，隐狼失败。身份查验始终显示平民。",
+    "_N$string": "狼人阵营但不能杀人，晚上也不和狼人一起睁眼，狼队友死光后，隐狼失败。身份查验始终显示平民。",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "dbjDGqKtxMabuWbMTAbZoP"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 225
+      "__id__": 244
     },
     "_enabled": true,
     "_materials": [
@@ -11202,11 +12215,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 249
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 228
+        "__id__": 251
       }
     ],
     "_prefab": null,
@@ -11258,11 +12275,105 @@
     "_id": "8e61Dnv15OoYi7yvZ2a2Ti"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 248
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 250
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 210.39999999999998
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "25ekvD5s9BCY5jUsFVOAWX"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 249
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "每晚和狼人一起行动，在狼人杀完人后，大野狼可以单独醒来杀害一人。当有狼人死亡后，不能再单独行动。",
+    "_N$string": "每晚和狼人一起行动，在狼人杀完人后，大野狼可以单独醒来杀害一人。当有狼人死亡后，不能再单独行动。",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "0eYWiwirhAuLfTwlLZp6cj"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 227
+      "__id__": 248
     },
     "_enabled": true,
     "_materials": [
@@ -11296,11 +12407,15 @@
     "_parent": {
       "__id__": 204
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 253
+      }
+    ],
     "_active": true,
     "_components": [
       {
-        "__id__": 230
+        "__id__": 255
       }
     ],
     "_prefab": null,
@@ -11352,11 +12467,105 @@
     "_id": "24DZ0wQ8tEpKYbvNEDs8Nt"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "describle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 252
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 254
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 440,
+      "height": 410.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        200,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "9bFAi/+XFMurG1+3bhsr31"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 253
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "第一天晚上，野孩子醒来并选择一个榜样，之后的游戏中当榜样以任何形式死亡时，野孩子因为榜样的死亡而丧失人性，成为一个狼人。从这时开始野孩子成为狼人阵营，每天晚上和狼人一起行动，胜利目标也和狼人相同。之前则一直为好人阵营。",
+    "_N$string": "第一天晚上，野孩子醒来并选择一个榜样，之后的游戏中当榜样以任何形式死亡时，野孩子因为榜样的死亡而丧失人性，成为一个狼人。从这时开始野孩子成为狼人阵营，每天晚上和狼人一起行动，胜利目标也和狼人相同。之前则一直为好人阵营。",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 3,
+    "_N$cacheMode": 0,
+    "_id": "7b3nScl71Cs7Np2t055+Uw"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 229
+      "__id__": 252
     },
     "_enabled": true,
     "_materials": [
@@ -11393,7 +12602,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 220,
+      "width": 1080,
       "height": 2730
     },
     "_resize": 1,
@@ -11414,6 +12623,33 @@
     "_N$horizontalDirection": 0,
     "_N$affectedByScale": false,
     "_id": "b9Mn7wBUtEO7yIa90vKhMi"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 204
+    },
+    "_enabled": true,
+    "alignMode": 0,
+    "_target": null,
+    "_alignFlags": 45,
+    "_left": 0,
+    "_right": 0,
+    "_top": -126.25,
+    "_bottom": -983.75,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 200,
+    "_originalHeight": 150,
+    "_id": "71vM3KJYFFpKGc/q63ee9M"
   },
   {
     "__type__": "cc.Widget",
