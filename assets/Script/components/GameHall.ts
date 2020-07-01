@@ -17,6 +17,9 @@ export default class GameHall extends cc.Component {
     @property(cc.Node)
     setBySelf: cc.Node = null;
 
+    @property(cc.Node)
+    cardIntroduce: cc.Node = null;
+
     @property(cc.Label)
     userName: cc.Label = null;
 
@@ -32,6 +35,7 @@ export default class GameHall extends cc.Component {
     onLoad () {
         this.preset.active = false;
         this.setBySelf.active = false;
+        this.cardIntroduce.active = false;
     }
 
     start () {
@@ -43,13 +47,32 @@ export default class GameHall extends cc.Component {
     selectPreset(){
         this.preset.active = true;
         this.setBySelf.active = false;
+        this.cardIntroduce.active = false;
     }
 
     //自设板
     selectSetBySelf(){
         this.setBySelf.active = true;
         this.preset.active = false;
+        this.cardIntroduce.active = false;
     }
 
+    /**
+     * 打开角色身份名词解释
+     */
+    onCradDescrible(){
+        this.cardIntroduce.active = true;
+        this.preset.active = false;
+        this.setBySelf.active = false;
+    }
+
+    /**
+     * 关闭角色身份名词解释
+     */
+    offCradDescrible(){
+        this.cardIntroduce.active = false;
+        this.preset.active = false;
+        this.setBySelf.active = false;
+    }
     // update (dt) {}
 }

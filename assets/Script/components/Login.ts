@@ -15,9 +15,6 @@ export default class Login extends cc.Component {
   @property(cc.Node)
   GameHall: cc.Node = null;
 
-  @property
-  text: string = 'hello';
-
   @property(cc.Button)
   button: cc.Button = null;
 
