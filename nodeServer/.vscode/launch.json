@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "账号服",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/account_server/app.js",
+            "args": ["${workspaceFolder}/config.js"],//传递给程序的命令行参数
+            "runtimeExecutable": null
+        }
+    ]
+}
