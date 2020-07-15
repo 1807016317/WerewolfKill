@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "守卫",
+    "texture": "577c8000-3e52-4077-9e2a-36aadc4bdf4b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      176,
+      180
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      176,
+      180
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

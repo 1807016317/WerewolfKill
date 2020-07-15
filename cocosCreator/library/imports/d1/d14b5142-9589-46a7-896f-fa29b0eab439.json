@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "kill_logo",
+    "texture": "bfea2153-992f-453f-ab11-b51af30a27ef",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      786,
+      506
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      786,
+      506
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

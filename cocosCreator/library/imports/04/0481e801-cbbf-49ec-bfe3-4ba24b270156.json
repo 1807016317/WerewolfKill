@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "大野狼",
+    "texture": "aabbea7f-762a-48c2-84b2-c09c1f03a046",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      252,
+      258
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      252,
+      258
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

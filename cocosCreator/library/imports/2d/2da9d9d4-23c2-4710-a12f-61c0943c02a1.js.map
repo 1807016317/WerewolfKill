@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\manager\\Global.ts"],"names":[],"mappings":";;;;;AAAA,IAAI,KAAK,GAAG,EAAE,CAAC;AAEf,iBAAS,KAAK,CAAC","file":"","sourceRoot":"/","sourcesContent":["let g_Mgr = {};\r\n\r\nexport = g_Mgr;"]}

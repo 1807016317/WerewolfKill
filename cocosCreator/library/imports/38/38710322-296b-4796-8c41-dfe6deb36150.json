@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "狼人",
+    "texture": "be5a13b1-32a7-464d-8352-c0ca43572b2b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      300,
+      303
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      300,
+      303
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "野孩子",
+    "texture": "bd0b97e0-841f-4819-a8b1-d60435251ad5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      277,
+      278
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      277,
+      278
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
