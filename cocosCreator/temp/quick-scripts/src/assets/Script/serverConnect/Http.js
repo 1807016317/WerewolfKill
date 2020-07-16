@@ -56,13 +56,17 @@ function sendRequest(path, data, handler, extraUrl) {
     var sendtext = '?';
     function praseData(data, sendtext) {
         for (var k in data) {
-            if (data[k].__proto__ !== null || data[k].__proto__ !== undefined) {
-                praseData(data[k], sendtext);
-            }
             if (sendtext != "?") {
                 sendtext += "&";
             }
-            sendtext += (k + "=" + data[k]);
+            if (data.hasOwnProperty(k)) {
+                if (typeof data[k] === 'object' && data[k] !== null) {
+                    sendtext += (k + "=" + JSON.stringify(data[k]));
+                }
+                else {
+                    sendtext += (k + "=" + data[k]);
+                }
+            }
         }
         return sendtext;
     }

@@ -351,9 +351,8 @@ window.__require = function e(t, n, r) {
       var sendtext = "?";
       function praseData(data, sendtext) {
         for (var k in data) {
-          null === data[k].__proto__ && void 0 === data[k].__proto__ || praseData(data[k], sendtext);
           "?" != sendtext && (sendtext += "&");
-          sendtext += k + "=" + data[k];
+          data.hasOwnProperty(k) && ("object" === typeof data[k] && null !== data[k] ? sendtext += k + "=" + JSON.stringify(data[k]) : sendtext += k + "=" + data[k]);
         }
         return sendtext;
       }
